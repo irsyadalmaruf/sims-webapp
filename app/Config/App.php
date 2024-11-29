@@ -16,7 +16,22 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
-    public string $baseURL = 'http://localhost:8080/';
+    public string $baseURL = '';
+
+    public function __construct()
+    {
+        parent::__construct();
+
+        // Deteksi otomatis baseURL
+        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+        $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
+        $scriptName = $_SERVER['SCRIPT_NAME'] ?? '/';
+        $basePath = str_replace('/index.php', '', $scriptName);
+
+        // Atur baseURL secara otomatis
+        $this->baseURL = "{$protocol}://{$host}{$basePath}/";
+    }
+
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
