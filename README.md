@@ -1,11 +1,11 @@
-**OPS Test Praktek Web Programmer**
+# **OPS Test Praktek Web Programmer**
 
-Sims Web App
+## **Sims Web App**
 
-PHP 8.2
+- PHP 8.2
 - Code Igniter 4.5
 - PostgreSQL
 
-Login:
+Login
 - email: irsyadalmaruf12345@gmail.com
 - password: irsyad180901
