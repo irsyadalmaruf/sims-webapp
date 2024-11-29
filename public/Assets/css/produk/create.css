@@ -1,0 +1,200 @@
+.produk-container {
+    padding: 10px;
+}
+
+.produk-container h4 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group-row .form-group {
+    flex: 1;
+}
+
+.select.form-control {
+    width: 100%;
+}
+
+.form-group-row.khusus-kategori-nama {
+    display: grid;
+    grid-template-columns: 0.975fr 2fr; 
+    gap: 20px;
+}
+
+.kategori .input-wrapper,
+.nama-barang .input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.kategori .input-wrapper select,
+.nama-barang .input-wrapper input {
+    width: 100%;
+}
+
+.image-drop-area {
+    border: 2px dashed #007bff;
+    padding: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    overflow: hidden;
+}
+
+.image-drop-area i {
+    color: #007bff;
+    font-size: 60px;
+}
+
+.image-drop-area img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: none; 
+}
+
+.image-drop-area img.display {
+    display: block; 
+}
+
+.file-name {
+    color: #007bff;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.produk-container.create-page .form-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px; 
+}
+
+.produk-container.create-page .btn {
+    padding: 5px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    width: auto;
+    transition: all 0.3s ease;
+    min-width: 150px; 
+}
+
+.produk-container.create-page .btn-cancel {
+    background-color: #fff;
+    color: #3366ff;
+    border: 2px solid #3366ff;
+}
+
+.produk-container.create-page .btn-cancel:hover {
+    background-color: #fbf8f8;
+    color: #3366ff;
+}
+
+.produk-container.create-page .btn-save {
+    background-color: #3366ff;
+    color: #fff;
+}
+
+.produk-container.create-page .btn-save:hover {
+    background-color: #3064ff;
+    color: #fff;
+}
+
+.produk-container.create-page .btn-cancel,
+.produk-container.create-page .btn-save {
+    min-width: 150px;
+}
+
+.produk-container.create-page .btn-save {
+    min-width: 170px;
+}
+
+@media (max-width: 768px) {
+    .form-group-row.khusus-kategori-nama {
+        grid-template-columns: 1fr; 
+        gap: 0;
+    }
+
+    .kategori,
+    .nama-barang {
+        width: 100%; 
+    }
+
+    .kategori .input-wrapper select,
+    .nama-barang .input-wrapper input {
+        width: 100%; 
+    }
+
+    .form-group-row {
+        flex-direction: column; 
+        gap: 0; 
+    }
+
+    .form-group {
+        max-width: 100%; 
+        width: 100%; 
+    }
+
+    .form-group label {
+        margin-bottom: 5px; 
+    }
+
+    .form-group select.form-control,
+    .form-group input.form-control {
+        width: 100%; 
+        margin-bottom: 15px; 
+    }
+
+    .image-drop-area {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .produk-container.create-page .form-footer {
+        flex-direction: column; 
+        align-items: flex-start; 
+        width: 100%; 
+    }
+
+    .produk-container.create-page .btn {
+        width: 100%; 
+        padding: 10px 20px; 
+        min-width: 100%; 
+    }
+
+    .produk-container.create-page .btn-cancel,
+    .produk-container.create-page .btn-save {
+        margin-bottom: 10px; 
+    }
+}
