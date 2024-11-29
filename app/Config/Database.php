@@ -27,10 +27,10 @@ class Database extends Config
 
     public array $default = [
         'DSN'        => '',
-        'hostname'   => 'localhost',
+        'hostname'   => 'autorack.proxy.rlwy.net',
         'username'   => 'postgres',
-        'password'   => '182028',
-        'database'   => 'db_sims_webapp',
+        'password'   => 'itPkNyjCjnbFnSjKnUHRQFCZqWuNjcOZ',
+        'database'   => 'railway',
         'schema'     => 'public',
         'DBDriver'   => 'Postgre',
         'DBPrefix'   => '',
@@ -39,7 +39,7 @@ class Database extends Config
         'charset'    => 'utf8',
         'swapPre'    => '',
         'failover'   => [],
-        'port'       => 5432,
+        'port'       => 25945,
         'dateFormat' => [
             'date'     => 'Y-m-d',
             'datetime' => 'Y-m-d H:i:s',
