@@ -16,22 +16,7 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
-    public string $baseURL = '';
-
-    public function __construct()
-    {
-        parent::__construct();
-
-        // Deteksi otomatis baseURL
-        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
-        $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
-        $scriptName = $_SERVER['SCRIPT_NAME'] ?? '/';
-        $basePath = str_replace('/index.php', '', $scriptName);
-
-        // Atur baseURL secara otomatis
-        $this->baseURL = "{$protocol}://{$host}{$basePath}/";
-    }
-
+    public string $baseURL = 'https://sims-webapp-production-c9db.up.railway.app/';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
