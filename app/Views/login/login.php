@@ -24,6 +24,8 @@
             </h2>
             <p class="sub-title">Masuk atau buat akun untuk memulai</p>
 
+            <?= base_url() ?>
+
             <div class="form-input-login">
                 <form action="/auth/process" method="post">
                     <div class="form-group">
