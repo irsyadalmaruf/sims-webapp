@@ -109,10 +109,8 @@
                 const dataInfo = document.querySelector('.data-info');
                 produkTable.innerHTML = data.tableHtml;
 
-                // Menampilkan informasi jumlah data yang difilter dan total data
-                dataInfo.innerHTML = `Show ${data.shownData} from ${data.totalFilteredData} entries`; // Perbaikan di sini
+                dataInfo.innerHTML = `Show ${data.shownData} from ${data.totalFilteredData} entries`; 
 
-                // Display pagination
                 const pagination = document.querySelector('.pagination');
                 pagination.innerHTML = '';
                 for (let i = 1; i <= data.totalPages; i++) {
