@@ -1,13 +1,11 @@
-# **OPS Test Praktek Web Programmer**
+# **Sims Web App**
 
-## **Sims Web App**
+## 🛠️ Teknologi yang Digunakan
+- **Backend**: PHP 8.2, CodeIgniter 4.5
+- **Frontend**: HTML, CSS, JavaScript
+- **Database**: PostgreSQL
 
-- PHP 8.2
-- Code Igniter 4.5
-- PostgreSQL
+## 🔑 Login Credentials
 
-https://sims-webapp-production-c9db.up.railway.app/
-
-Login
-- email: irsyadalmaruf12345@gmail.com
-- password: irsyad180901
+### 👤 **Login User**
+- **email**: `irsyadalmaruf12345@gmail.com` | **Password**: `irsyad180901`
